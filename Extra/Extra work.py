@@ -1,76 +1,30 @@
-#def calculator():
-def add(x, y):
-   return x + y
-def subtract(x, y):
-   return x - y
-def multiply(x, y):
-   return x * y
-def divide(x, y):
-   return x / y
-def percentage(x,y):
-    return x % y
-
-def calculator():
- print ("Welcome to calculator")
- print("Select operation.")
- print("1.Add")
- print("2.Subtract")
- print("3.Multiply")
- print("4.Divide")
- print("5.Percentage")
-# Select choice
- choice = (input("Enter choice(1/2/3/4/5): "))
- while  not choice.isdigit():
-    print("Entre only number")
-    choice = (input("Enter choice(1/2/3/4/5): "))
-    continue
-# User input
- num1 = (input("Enter first number: "))
- while not num1.isdigit():
-    print("Enter only number")
-    num1 = (input("Re-enter first number: "))
-    continue
-
- num2 = (input("Enter second number: "))
- while not num2.isdigit():
-    print("Enter only number")
-    num2 = (input("Re-enter second number: "))
-    continue
-
-
- n1 = int(num1)
- n2 = int(num2)
- if choice == '1':
-   print(num1,"+",num2,"=", add(n1,n2))
-
- elif choice == '2':
-   print(num1,"-",num2,"=", subtract(n1,n2))
-
- elif choice == '3':
-   print(num1,"*",num2,"=", multiply(n1,n2))
-
- elif choice == '4':
-   print(num1,"/",num2,"=", divide(n1,n2))
- elif choice == '5':
-    print((n1/n2)*100)
+def factorial():
+ num = (input("Enter your number: "))
+ while not num.isdigit():
+  print("Enter only number")
+  num = (input("Re-enter your number: "))
+#def factorial():
+ n= int(num)
+ factorial = 1
+ if n < 0:
+  print("Sorry, factorial does not exist for negative numbers")
+ elif n == 0:
+   print("The factorial of 0 is 1")
  else:
-   print("Invalid input")
+  for i in range(1,n + 1):
+   factorial = factorial*i
+   print("The factorial of",n,"is",factorial)
 
-calculator()
+factorial()
 
-user_choice = True
-while user_choice:
- user_choice= input("Do you want calculate again? Please type y for yes and n for no: ")
- if user_choice == "n":
-     print("Thanks for using")
-     break
- elif user_choice == "y":
-     print("Calculate again ")
-     calculator()
- else:
-     print("Please select correct  in choice")
-
-
-
-
-
+num1 = True
+while num1:
+    num1 = input("Do you want using again? Please type y for yes and n for no: ")
+    if num1 == "n":
+        print("Thanks for using")
+        break
+    elif num1 == "y":
+        print("Welcome again ")
+        factorial()
+    else:
+           print("Please select correct  in choice")
