@@ -1,10 +1,11 @@
 def factorial():
  num = (input("Enter your number: "))
- while not num.isdigit():
+ n1 = num.replace(" ","")
+ while not n1.isdigit():
   print("Enter only number")
-  num = (input("Re-enter your number: "))
+  n1 = (input("Re-enter your number: "))
 #def factorial():
- n= int(num)
+ n= int(n1)
  factorial = 1
  if n < 0:
   print("Sorry, factorial does not exist for negative numbers")
@@ -13,7 +14,7 @@ def factorial():
  else:
   for i in range(1,n + 1):
    factorial = factorial*i
-   print("The factorial of",n,"is",factorial)
+  print("The factorial of",n,"is",factorial)
 
 factorial()
 
