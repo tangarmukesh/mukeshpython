@@ -6,6 +6,6 @@ def print_factors(x):
 
 # Input from the user
 
-num = int(input("Enter a number:"))
-print("\nFactors of given number are:")
+num = int(input("Enter a number: "))
+print("Factors of given number are: ")
 print_factors(num)
