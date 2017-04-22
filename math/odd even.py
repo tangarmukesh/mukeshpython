@@ -1,8 +1,9 @@
-num = int(input("Enter a number: "))
-if num.isdigit():
+num = (input("Enter a number: "))
+if not num.isdigit():
     print("Please enter only digit")
-    num = int(input("Re-enter your number:  "))
-mod = (num % 2)
+    num = (input("Re-enter your number:  "))
+n1 = int(num)
+mod = (n1 % 2)
 if mod > 0:
     print("Odd number")
 else:
