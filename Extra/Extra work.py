@@ -4,6 +4,5 @@ class math():
 a = int(input("Enter first number: "))
 b = int(input("Enter second number: "))
 def sum(a, b):
-
-      print( add)
-      return sum
+ print(a, "+", b, "=", sum(a,b))
+ return sum
