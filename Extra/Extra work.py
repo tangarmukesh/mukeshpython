@@ -1,8 +1,19 @@
-class math():
- def add(a,b):
-    return a + b
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
-def sum(a, b):
- print(a, "+", b, "=", sum(a,b))
- return sum
+class lar():
+
+    def largestnumber(self):
+     global largest
+     largest = ('a','b','c')
+     a = int(input("Enter your first number: "))
+     b = int(input("Enter your second number: "))
+     c = int(input("Enter your thrid number: "))
+     if(a>b) and (a>c):
+      largest = a
+      #print("The largest number betwwen ", a, ",", b, "and", c, "is", largest)
+     elif(b>a) and (b>c):
+      largest = b
+      #print("The largest number betwwen ", a, ",", b, "and", c, "is", largest)
+     else:
+      largest = c
+      print("The largest number betwwen ",a,",",b,"and",c,"is", largest)
+      return lar
+
