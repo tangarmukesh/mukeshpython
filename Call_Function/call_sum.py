@@ -1,11 +1,12 @@
 from Call_Function.sumclass import math
 class callfunction(math):
-    def usename(name):
+    def usename(self):
         name = input("Enter username: ")
-        print("Name is" + name)
+        print("Name is " + name)
         age = input("Enter your age: ")
         if int(age) > 18:
             print("Welcome" + age)
         else:
-            #print("Not Enter")
-            sum()
+            math.sum(self)
+
+callfunction.usename("hemant")
