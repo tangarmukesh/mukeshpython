@@ -1,4 +1,4 @@
-class math():
+class mathcal():
  def sum(self):
      a = (input("Enter first number: "))
      b = (input("Enter second number: "))
@@ -6,7 +6,7 @@ class math():
      if sum > 20:
       print(a, "+", b, "=", sum)
      else:
-         math.multi(self)
+         mathcal.multi(self)
      return sum
 
  def multi(self):
