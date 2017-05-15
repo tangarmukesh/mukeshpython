@@ -1,11 +1,11 @@
 class lar():
 
     def largestnumber(self):
-     global largest
-     largest = ('a','b','c')
+
      a = int(input("Enter your first number: "))
      b = int(input("Enter your second number: "))
      c = int(input("Enter your thrid number: "))
+     global largest
      if(a>b) and (a>c):
       largest = a
       #print("The largest number betwwen ", a, ",", b, "and", c, "is", largest)
