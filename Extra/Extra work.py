@@ -1,19 +1,35 @@
-class lar():
-
-    def largestnumber(self):
-
-     a = int(input("Enter your first number: "))
-     b = int(input("Enter your second number: "))
-     c = int(input("Enter your thrid number: "))
-     global largest
-     if(a>b) and (a>c):
-      largest = a
-      #print("The largest number betwwen ", a, ",", b, "and", c, "is", largest)
-     elif(b>a) and (b>c):
-      largest = b
-      #print("The largest number betwwen ", a, ",", b, "and", c, "is", largest)
-     else:
-      largest = c
-      print("The largest number betwwen ",a,",",b,"and",c,"is", largest)
-      return lar
-
+userdetails= []
+workingdetails= []
+place= ('Gurgaon')
+firstname= input("Enter your first name ")
+lastname= input("Enter your last name ")
+age= input("Enter your age ")
+company= input("Enter your company name ")
+place= input("Enter your company location ")
+pincode= input("Enter area pin code ")
+userdetails.append(firstname)
+userdetails.append(lastname)
+userdetails.append(age)
+workingdetails.append(company)
+workingdetails.append(place)
+workingdetails.append(pincode)
+print(userdetails)
+print(workingdetails)
+userdetails.append(workingdetails)
+print(userdetails)
+userdetails.extend(workingdetails)
+print(userdetails)
+#print(userdetails[3][1])
+#print(len(userdetails))
+user= tuple(userdetails)
+workingdetails.append(place)
+print(user)
+print(type(user))
+'''a= user.count('Gurgaon')
+b= workingdetails.count('Gurgaon')
+print(a)
+print(b)
+mylist=list(user)
+print(mylist)
+x=mylist.count('Gurgaon')
+print(x)'''

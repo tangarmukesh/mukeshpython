@@ -9,6 +9,10 @@ def divide(x, y):
    return x / y
 def percentage(x,y):
     return x % y
+def floordivision(x,y):
+    return x//y
+def exponent(x,y):
+    return x**y
 
 def calculator():
  print ("Welcome to calculator")
@@ -18,11 +22,13 @@ def calculator():
  print("3.Multiply")
  print("4.Divide")
  print("5.Percentage")
+ print("6.Floor Division ")
+ print("7.Exponent")
 # Select choice
- choice = (input("Enter choice(1/2/3/4/5): "))
+ choice = (input("Enter choice(1/2/3/4/5/6/7): "))
  while  not choice.isdigit():
     print("Entre only number")
-    choice = (input("Enter choice(1/2/3/4/5): "))
+    choice = (input("Enter choice(1/2/3/4/5/6/7): "))
     continue
 # User input
  num1 = (input("Enter first number: "))
@@ -53,6 +59,10 @@ def calculator():
    print(num1,"/",num2,"=", divide(n1,n2))
  elif choice == '5':
     print((n1/n2)*100)
+ elif choice == '6':
+     print(n1//n2)
+ elif choice == '7':
+     print(n1**n2)
  else:
    print("Invalid input")
 
@@ -68,7 +78,7 @@ while user_choice:
      print("Calculate again ")
      calculator()
  else:
-     print("Please select correct  in choice")
+     print("Please select correct choice")
 
 
 
