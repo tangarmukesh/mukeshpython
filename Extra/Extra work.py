@@ -1,31 +1,17 @@
-inputString = input("Please type a sentence: ").lower()
-a = "a"
-e = "e"
-i = "i"
-o = "o"
-u = "u"
-acount = 0
-ecount = 0
-icount = 0
-ocount = 0
-ucount = 0
+x = input("Enter a sentence: ").upper()
+#y= x.count(" ")
+#print(y)
+a=x.split(" ")
+num = []
+count=0
+#loop through every char
+for i in a:
+   #for every char, loop through vowels
+   for v in i:
+    #if char matches vowels, increase num
+      if v == 'A' or v == 'E' or  v == 'I' or v == 'O' or  v == 'U':
+        count+= 1
+   num.append(count)
+   count=0
 
-
-if  a in inputString :
-     acount = acount + 1
-
-if  e in inputString :
-     ecount = ecount + 1
-
-if  i in inputString :
-    icount = icount + 1
-
-if o  in inputString :
-     ocount = ocount + 1
-
-if u  in inputString :
-     ucount = ucount + 1
-totalcount= acount+ecount+icount+ocount+ucount
-
-print(acount, ecount, icount, ocount, ucount)
-print(totalcount)
+print(num)
