@@ -1,35 +1,31 @@
-userdetails= []
-workingdetails= []
-place= ('Gurgaon')
-firstname= input("Enter your first name ")
-lastname= input("Enter your last name ")
-age= input("Enter your age ")
-company= input("Enter your company name ")
-place= input("Enter your company location ")
-pincode= input("Enter area pin code ")
-userdetails.append(firstname)
-userdetails.append(lastname)
-userdetails.append(age)
-workingdetails.append(company)
-workingdetails.append(place)
-workingdetails.append(pincode)
-print(userdetails)
-print(workingdetails)
-userdetails.append(workingdetails)
-print(userdetails)
-userdetails.extend(workingdetails)
-print(userdetails)
-#print(userdetails[3][1])
-#print(len(userdetails))
-user= tuple(userdetails)
-workingdetails.append(place)
-print(user)
-print(type(user))
-'''a= user.count('Gurgaon')
-b= workingdetails.count('Gurgaon')
-print(a)
-print(b)
-mylist=list(user)
-print(mylist)
-x=mylist.count('Gurgaon')
-print(x)'''
+inputString = input("Please type a sentence: ").lower()
+a = "a"
+e = "e"
+i = "i"
+o = "o"
+u = "u"
+acount = 0
+ecount = 0
+icount = 0
+ocount = 0
+ucount = 0
+
+
+if  a in inputString :
+     acount = acount + 1
+
+if  e in inputString :
+     ecount = ecount + 1
+
+if  i in inputString :
+    icount = icount + 1
+
+if o  in inputString :
+     ocount = ocount + 1
+
+if u  in inputString :
+     ucount = ucount + 1
+totalcount= acount+ecount+icount+ocount+ucount
+
+print(acount, ecount, icount, ocount, ucount)
+print(totalcount)
