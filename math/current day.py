@@ -1,23 +1,18 @@
-import datetime
-
-def daynamefromweekdays():
-    weekday = datetime.date.today().strftime("%A")
-    if weekday == "Monday":
-        print ("Test")
-    elif weekday == "Tuesday":
-        print ("Test1")
-    elif weekday == "Wednesday":
-        print ("Test2")
-    elif weekday == "Thursday":
-        print ("Test3")
-    elif weekday == "Friday":
-        print ("Test4")
-    elif weekday == "Saturday":
-        print ("Test5")
-    elif weekday == "Sunday":
-        print ("Test6")
-    else:
-        print("Invalid")
-
-
-
+weekday = input("Enter your day: ").lower()
+task = input("Enter your task: ").upper()
+if weekday == "monday":
+   print ("Today is Monday and your task is",task)
+elif weekday == "tuesday":
+   print ("Today is Tuesday and your task is",task)
+elif weekday == "wednesday":
+   print ("Today is Wednesday and your task is",task)
+elif weekday == "thursday":
+   print ("Today is Thursday and your task is",task)
+elif weekday == "friday":
+   print ("Today is Friday and your task is",task)
+elif weekday == "saturday":
+   print ("Today is Saturday and your task is",task)
+elif weekday == "sunday":
+   print ("Today is Sunday and your task is",task)
+else:
+   print("You entered an invalid day.")
