@@ -13,7 +13,7 @@ def factorial():
  else:
      for i in range(1, n + 1):
         factorial = factorial * i
-       # print(i,"factorial of every step is", i, factorial)
+        print(i,"factorial of every step is", i, factorial)
  print("The factorial of", n, "is", factorial)
 factorial()
 x=True
