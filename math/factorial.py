@@ -4,6 +4,7 @@ def factorial():
  while not num1.isdigit():
         print("Please enter only positive number")
         num = input("Enter your number: ")
+        num1 = num.replace(" ", "")
         continue
  n = int(num1)
  factorial = 1

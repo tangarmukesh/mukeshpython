@@ -20,6 +20,8 @@ if (n1%n2 == 0):
     print("A")
 elif ((n1+n2)%n3 == 0):
     print("B")
+elif ((n1-n2)%n3 == 0):
+    print("c")
 else:
     print("Bye")
 
