@@ -1,35 +1,16 @@
-userdetails= []
-workingdetails= []
-place= ('Gurgaon')
-firstname= input("Enter your first name ")
-lastname= input("Enter your last name ")
-age= input("Enter your age ")
-company= input("Enter your company name ")
-place= input("Enter your company location ")
-pincode= input("Enter area pin code ")
-userdetails.append(firstname)
-userdetails.append(lastname)
-userdetails.append(age)
-workingdetails.append(company)
-workingdetails.append(place)
-workingdetails.append(pincode)
-print(userdetails)
-print(workingdetails)
-userdetails.append(workingdetails)
-print(userdetails)
-userdetails.extend(workingdetails)
-print(userdetails)
-#print(userdetails[3][1])
-#print(len(userdetails))
-user= tuple(userdetails)
-workingdetails.append(place)
-print(user)
-print(type(user))
-'''a= user.count('Gurgaon')
-b= workingdetails.count('Gurgaon')
-print(a)
-print(b)
-mylist=list(user)
-print(mylist)
-x=mylist.count('Gurgaon')
-print(x)'''
+units = int(input('Enter the number of units consumed: '))
+if units <= 100:
+    cost = units * 0.40
+    print(cost)
+elif units > 100 and units <= 300:
+    cost = 100 * 0.40
+    extraunits = units - 100
+    cost = extraunits * 0.50 + cost
+elif units > 300:
+    cost = 100 * 0.40
+    cost = 200 * 0.50 + cost
+    extraunits = units - 300
+    cost =  extraunits * 0.60 + cost
+metercharge = 50
+totalcost = cost + metercharge
+print('The total charges are', totalcost)
