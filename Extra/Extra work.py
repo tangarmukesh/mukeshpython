@@ -1,3 +1,7 @@
-datalist = input("Enter your datalist: ")
-for item in datalist:
-    print("Type of ", item, " is ", type(item))
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+b=[]
+num = int(input("Enter your number: "))
+for i in a:
+    if i < num:
+        b.append(i)
+print(b)
