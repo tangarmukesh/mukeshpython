@@ -1,13 +1,13 @@
-time = float(input("Input time in seconds: "))
-month = time // (30*7*24*3600)
-time = time % (30*7*24*3600)
-week = time //  (7*24*3600)
-time = time % (7*24*3600)
-day = time // (24 * 3600)
-time = time % (24 * 3600)
-hour = time // 3600
-time %= 3600
-minutes = time // 60
-time %= 60
-seconds = time
-print("m:w:d:h:m:s->%d:%d:%d:%d:%d:%d" % (month,week,day,hour, minutes, seconds))
+n = 0
+x = int(input("Enter your lines: "))
+for x in range (0,x):
+    n = n + 1
+    for a in range (0, n-1):
+        print ('*', end = '')
+    print()
+for b in range (0,x):
+    n = n - 1
+    for d in range (0, n):
+        print ('*', end = '')
+    print()
+print ('')
