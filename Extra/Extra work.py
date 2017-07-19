@@ -1,13 +1,13 @@
-n = 0
-x = int(input("Enter your lines: "))
-for x in range (0,x):
-    n = n + 1
-    for a in range (0, n-1):
-        print ('*', end = '')
+num = int(input("What is your height: "))
+count = 1
+space_count = num
+for rows in range (num):
+    for spaces in range (space_count):
+        print(end=' ')
+    for stars in range (count):
+        print ("*", end=' ')
+    space_count = space_count - 1
+    count = count + 1
+
+
     print()
-for b in range (0,x):
-    n = n - 1
-    for d in range (0, n):
-        print ('*', end = '')
-    print()
-print ('')
