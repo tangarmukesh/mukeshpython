@@ -1,13 +1,9 @@
-num = int(input("What is your height: "))
-count = 1
-space_count = num
-for rows in range (num):
-    for spaces in range (space_count):
-        print(end=' ')
-    for stars in range (count):
-        print ("*", end=' ')
-    space_count = space_count - 1
-    count = count + 1
+num = int(input("Enter your number: "))
+num1 = int(input("Enter your number: "))
+num2 = int(input("Enter your number: "))
+sum = (num+num1+num2)
+if num == num1 == num2:
+    sum1 = sum*3
 
-
-    print()
+print(sum)
+print(sum1)
