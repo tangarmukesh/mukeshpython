@@ -1,6 +1,10 @@
-from datetime import date, timedelta
-print(date.today())
-ydate = date.today() - timedelta(1)
-tdate = date.today() - timedelta(-1)
-print("Yesterday date: ",ydate)
-print("Tomorrow date: ",tdate)
+n = int(input("Enter your number: "))
+for i in range(1, 10):
+    if n != i:
+        print("Sorry you missed that")
+    else:
+        print("Well guessed!")
+
+
+
+
