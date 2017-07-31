@@ -1,11 +1,9 @@
 year = input("Enter year: ")
-year1 = year.replace(" ","")
-while not year1.isdigit():
+if year.isalpha():
  print("Enter only number")
  year = input("Enter year: ")
- year1 = year.replace(" ","")
-y = int(year1)
+y = int(year)
 if(y % 4) == 0:
-    print(year1,"is a leap year")
+    print("{0} is a leap year")
 else:
-    print(year1,"is not a leap year")
+    print("{0} is not a leap year")

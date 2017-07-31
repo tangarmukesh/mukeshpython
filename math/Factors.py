@@ -1,9 +1,11 @@
-num= input("Enter your number: ")
-while not num.isdigit():
-   print("Please enter only number")
-   num= input("Enter your number: ")
-   continue
-n = int(num)
-for i in range(1, n + 1):
-        if n % i == 0:
+def print_factors(x):
+    for i in range(1, x + 1):
+        if x % i == 0:
             print(i);
+
+
+# Input from the user
+
+num = int(input("Enter a number: "))
+print("Factors of given number are: ")
+print_factors(num)
