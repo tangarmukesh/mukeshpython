@@ -1,6 +1,6 @@
 import datetime
 
-def daynamefromweekdays():
+def daynamefromweekdays(weekday):
     weekday = datetime.date.today().strftime("%A")
     if weekday == "Monday":
         print ("Test")
@@ -18,6 +18,7 @@ def daynamefromweekdays():
         print ("Test6")
     else:
         print("Invalid")
+daynamefromweekdays(2)
 
 
 
