@@ -1,5 +1,5 @@
 dir_nam = input("Enter your direction name: ")
-def turn(dir_nam):
+def turn_clockwise(dir_nam):
     if dir_nam == "n":
         return "E"
     elif dir_nam == "e":
@@ -10,4 +10,4 @@ def turn(dir_nam):
         return  "N"
     else:
         return "Invaild Input"
-print(turn(dir_nam))
+print(turn_clockwise(dir_nam))
