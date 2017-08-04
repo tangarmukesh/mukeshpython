@@ -1,4 +1,6 @@
-marks = int(input("Enter your marks "))
+#Write a function which is given an exam mark, and it returns a string — the grade for that mark
+
+marks = float(input("Enter your marks: "))
 def grade(marks):
     if marks >= 75:
         return "First"

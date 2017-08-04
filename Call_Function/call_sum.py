@@ -1,6 +1,6 @@
 from Call_Function.sumclass import mathcal
-from math.charinput import user
-from math.largest import lar
+from basic_code.charinput import user
+from basic_code.largest import lar
 
 class callfunction(mathcal):
     def usename(self):
