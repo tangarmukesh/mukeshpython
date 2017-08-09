@@ -1,3 +1,6 @@
+#Write a function days_in_month which takes the name of a month, and returns the number of days in the month. Ignore leap years
+
+
 months_in_year = int(input("Enter your year: "))
 days_in_month = int(input("Enter month number: "))
 
