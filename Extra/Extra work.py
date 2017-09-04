@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 with open('update.txt', 'r+') as file:
     text = file.read()
     print('\nString:', text)
@@ -18,3 +19,8 @@ with open('update.txt', 'r+') as file:
     file.seek(0)
     text = file.read()
     print('\nContent from the beginning of file is :', text)
+=======
+from selenium import webdriver
+browser=webdriver.Firefox()
+browser.get('http://www.google.com')
+>>>>>>> 6e0ee38a25082767d22c09fb02c5e21ef7cccbad

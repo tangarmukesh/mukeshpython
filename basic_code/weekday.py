@@ -3,6 +3,7 @@
 
 weekday = int(input("Enter your number: "))
 def dayName(weekday):
+    '''This for weekdays'''
     if weekday == 0:
         return "Sunday"
     elif weekday == 1:
@@ -20,3 +21,4 @@ def dayName(weekday):
     else:
         return "incorrect number"
 print(dayName(weekday))
+print(dayName.__doc__)
