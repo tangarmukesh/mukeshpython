@@ -26,7 +26,6 @@ mobile_app.click()
 #selct templates
 #cloud_management = driver.find_element_by_xpath("//h3[text()='Cloud Management']")
 #cloud_management.click()
-time.sleep(10);
 uber_temp = driver.find_element_by_xpath("//h3[text()='Uber']")
 uber_temp.click()
 
@@ -66,5 +65,27 @@ next_button.click()
 
 
 #Feature
-next_button = driver.find_element_by_xpath("//button[@class='next']")
+#next_button = driver.find_element_by_xpath("//featurecard/div[@class='featureBottomBar active']/div/div[@class='featureRight']/button")
+next_button = driver.find_element_by_xpath("(//div[@class='featureRight']/button)[2]")
 next_button.click()
+
+#Team and Speed
+time.sleep(10);
+#next_button = driver.find_element_by_xpath("//teamspeedcard/div[@class='timeBottomBar active']/div/div[@class='timeRight']/button")
+next_button = driver.find_element_by_xpath("//div[@class='timeRight']/button")
+next_button.click()
+
+#Phases
+'''support_phase = driver.find_element_by_xpath("//div[@class='fancyCheck']/label")
+driver.execute_script("arguments[0].scrollIntoView();", support_phase)
+support_phase.click()'''
+next_button = driver.find_element_by_xpath("//div[@class='phasesRight']/button")
+next_button.click()
+
+#SignIn
+user_mail = driver.find_element_by_name("email").send_keys("mukeshtangar@gmail.com")
+user_password = driver.find_element_by_name("password").send_keys("12345678")
+signin_button = driver.find_element_by_class_name("submitButton").click()
+
+#Closs NDA popup
+nda_later = driver.find_element_by_class_name("doLater").click()
