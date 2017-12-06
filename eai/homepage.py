@@ -1,6 +1,6 @@
 import unittest
 from selenium.webdriver.common.action_chains import ActionChains
-from eai.pagelib.Homepage import *
+from pagelib.Homepage import *
 from selenium import webdriver
 import time
 
@@ -8,7 +8,7 @@ driver = webdriver.Chrome()
 driver.implicitly_wait(30)
 driver.maximize_window()
 driver.get('http://staging.engineer.ai/home')
-'''
+
 #Open inter_chat
 driver.switch_to_frame(driver.find_element_by_name("intercom-launcher-discovery-frame"))
 time.sleep(5)
@@ -19,7 +19,7 @@ chat_open = driver.find_element_by_xpath("//img").click()
 
 chat_open = driver.find_element_by_xpath("//img").click()
 
-driver.switch_to_default_content()'''
+driver.switch_to_default_content()
 
 #Select app type
 
@@ -53,8 +53,8 @@ print('Found' + str(len(check_platform)) + 'platforms')
 #select platforms
 
 time.sleep(10);
-spec_button = driver.find_element_by_xpath("//button[@class='addSpec']")
-spec_button.click()
+#spec_button = driver.find_element_by_xpath("//button[@class='addSpec']")
+#spec_button.click()
 macos_platform = driver.find_element_by_xpath("//h3[text()='macOS']")
 driver.execute_script("arguments[0].scrollIntoView();", macos_platform)
 macos_platform.click()
@@ -72,21 +72,19 @@ next_button.click()
 #Team and Speed
 
 time.sleep(5);
-#next_button = driver.find_element_by_xpath("//teamspeedcard/div[@class='timeBottomBar active']/div/div[@class='timeRight']/button")
 next_button = driver.find_element_by_xpath("//div[@class='timeRight']/button")
 next_button.click()
 
 #Phases
-
-#support_phase = driver.find_element_by_xpath("//div[@class='fancyCheck']/label")
-#driver.execute_script("arguments[0].scrollIntoView();", support_phase)
-#support_phase.click()
+support_phase = driver.find_element_by_xpath("//div[@class='fancyCheck']/label")
+driver.execute_script("arguments[0].scrollIntoView();", support_phase)
+support_phase.click()
 next_button = driver.find_element_by_xpath("//div[@class='phasesRight']/button")
 next_button.click()
 
 #SignIn
-user_mail = driver.find_element_by_name("email").send_keys("mukeshtangar@gmail.com")
-user_password = driver.find_element_by_name("password").send_keys("12345678")
+user_mail = driver.find_element_by_name("email").send_keys("indiaqa50@gmail.com")
+user_password = driver.find_element_by_name("password").send_keys("password")
 signin_button = driver.find_element_by_class_name("submitButton").click()
 
 #Closs NDA popup
