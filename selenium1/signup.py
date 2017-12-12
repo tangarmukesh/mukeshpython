@@ -14,8 +14,8 @@ class RegisterNewUser(unittest.TestCase):
         driver.find_element_by_link_text("My Account").click()
 
         create_account_button= driver.find_element_by_xpath("//a[@title='Create an Account']")
-        create= self.assertTrue(create_account_button.is_displayed() and create_account_button.is_enabled())
-        print(create)
+        self.assertTrue(create_account_button.is_displayed() and create_account_button.is_enabled())
+        print(create_account_button.is_displayed() and create_account_button.is_enabled())
         create_account_button.click()
         self.assertEqual("Create New Customer Account",driver.title)
         first_name = driver.find_element_by_id("firstname")

@@ -113,7 +113,7 @@ with open('example.txt','r+') as file:
 
 import os
 if os.path.exists('example.txt'):
-    file = open)
+    file = open()
 
 
 
